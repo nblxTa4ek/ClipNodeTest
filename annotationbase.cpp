@@ -32,6 +32,7 @@ void AnnotationBase::handleBeforeRendering()
         clipNode->setGeometry(
             createGeometry(
                 rect.center()));
+		clipNode->setFlag(QSGNode::OwnsGeometry, true);
     }
 }
 
